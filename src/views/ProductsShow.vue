@@ -34,7 +34,8 @@ export default {
     };
   },
   created: function() {
-    axios.get('http://localhost:3000/api/products/1').then(response => {
+    console.log(this.$route.params.id);
+    axios.get('http://localhost:3000/api/products/' + this.$route.params.id).then(response => {
       console.log(response.data);
       this.product = response.data;
     })
