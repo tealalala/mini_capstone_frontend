@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import ProductsShow from './views/ProductsShow.vue'
+import Signup from "./views/Signup.vue";
 
 Vue.use(Router)
 
@@ -26,5 +27,9 @@ export default new Router({
       name: 'productsShow',
       component: ProductsShow
     },
+    {
+      path: "/signup",
+      name: "signup",
+      component: Signup }
   ]
 })
